@@ -16,7 +16,7 @@ jobs:
         uses: octokit/request-action@v2.x
         with:
           route: PATCH /repos/{owner}/{repo}
-          owner: aaronosher
+          owner: erinosher
           repo: abolish-ice
           name: abolish-ice
           default_branch: main
@@ -48,7 +48,7 @@ jobs:
       - name: Paint
         run: ./paint.sh
         env:
-          username: aaronosher
+          username: erinosher
         
       - name: Force Push
         run: git push -f origin drop-ice
@@ -62,7 +62,7 @@ jobs:
         uses: octokit/request-action@v2.x
         with:
           route: PATCH /repos/{owner}/{repo}
-          owner: aaronosher
+          owner: erinosher
           repo: abolish-ice
           name: abolish-ice
           default_branch: drop-ice
